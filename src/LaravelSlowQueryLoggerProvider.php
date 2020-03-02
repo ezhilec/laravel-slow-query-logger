@@ -61,7 +61,7 @@ class LaravelSlowQueryLoggerProvider extends ServiceProvider
 					$sql = preg_replace('/\?/', "'{$val}'", $sql, 1);
 				}
 
-				Log::channel('single')->log($level, $time . '  ' . $sql);
+				Log::channel(config('slow-query-logger.channel', 'daily'))->log($level, $time . 'ms - ' . $sql);
 			} catch (Exception $e) {
 				//  be quiet on error
 			}
