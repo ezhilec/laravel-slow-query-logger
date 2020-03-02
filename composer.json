@@ -1,5 +1,5 @@
 {
-	"name": "rokde/laravel-slow-query-logger",
+	"name": "ezhilec/laravel-slow-query-logger",
 	"description": "Slow Query Logger for Laravel",
 	"license": "MIT",
 	"authors": [
